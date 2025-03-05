@@ -29,7 +29,7 @@ section {
     padding: 60px;
     text-align: center;
 }
-.project-tile, .testimonial {
+.project-tile, .testimonial, .certificate{
     background-color: #B3C8CF;
     padding: 30px;
     margin: 20px auto;
