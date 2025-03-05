@@ -5,31 +5,37 @@ body {
     background-color: #F1F0E8;
     color: #4B5945;
 }
+
 nav {
     background-color: #89A8B2;
     padding: 15px;
     text-align: center;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
+
 nav ul li a {
     color: #F1F0E8;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
+
 section {
     padding: 60px;
     text-align: center;
 }
-.project-tile, .testimonial, .certificate{
+
+.project-tile, .testimonial, .certificate {
     background-color: #B3C8CF;
     padding: 30px;
     margin: 20px auto;
@@ -37,12 +43,76 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 a {
     color: #89A8B2;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
 }
+
 h1, h2, h3 {
     color: #4B5945;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .project-tile, .testimonial, .certificate {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    section {
+        padding: 40px;
+    }
+
+    .project-tile, .testimonial, .certificate {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .project-tile, .testimonial, .certificate {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 14px;
+    }
 }
